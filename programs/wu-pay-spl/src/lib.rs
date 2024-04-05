@@ -1,3 +1,16 @@
+/* This source code is primarily based on follwing online tutorial:
+
+https://betterprogramming.pub/using-pdas-and-spl-token-in-anchor-and-solana-df05c57ccd04
+
+https://101blockchains.com/transfer-sol-and-spl-tokens-using-anchor/
+
+It is inteded solely for educational purpose and not for commercial use. 
+The use of this code is subject to the terms and conditions as outlined 
+by the original source material from their website. The author of this 
+code bears no liability for any unintended consequences that arise from its use.
+*/
+
+
 use anchor_lang::prelude::*;
 use anchor_spl::token::{CloseAccount, Mint, Token, TokenAccount, Transfer, transfer,SyncNative, sync_native};
 
