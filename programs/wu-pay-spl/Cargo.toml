@@ -1,0 +1,23 @@
+[package]
+name = "wu-pay-spl"
+version = "0.1.0"
+description = "Transfer SPL token via 3rd parth escrow wallet"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "wu_pay_spl"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.28.0"
+anchor-spl = "0.28.0"
+solana-program = "1.16.0"
+ahash = "=0.8.6"
+
